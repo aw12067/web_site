@@ -1,0 +1,194 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Walunj Classes</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style1.css">
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea,input[type=password] {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  color: black;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 1.8em;
+}
+p{
+  text-align: center;
+  font-size: 2em;
+}
+
+#st{
+  color: red;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 26px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:auto;margin-right:auto;display:block;margin-bottom:0%"
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #61122f;
+  padding: 20px;
+  text-align: center;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.course_{
+  font-size: 2em;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+  <script type="text/javascript">
+    function print() {
+      window.alert("Loging you in");
+    }
+  </script>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Walunj Classes</h1></a>
+          </div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsable-nav" style="width:35px;height:30px;">
+           <span class="icon-bar" style="margin-left:-5px;"></span>
+            <span class="icon-bar" style="margin-left:-5px;"></span>
+            <span class="icon-bar" style="margin-left:-5px;"></span>
+          </button>
+        </div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+             <li id="navHomeButton">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            </li>
+            <li id="navCourseButton">
+              <a href="course.html">
+                <span class="glyphicon glyphicon-education"></span><br class="hidden-xs"> Courses</a>
+            </li>
+            <li id="navContactButton">
+              <a href ="#testimonials">
+                <span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs"> Contact-Us</a>
+            </li>
+            <li>
+              <a href="sign_up.html">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Login</a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+
+
+<div class="container1">
+<form action="login1.php" method="POST">
+<div class="row">
+  <div class="col-25">
+    <label for="name">Name</label>
+  </div>
+  <div class="col-75">
+    <input type="text" id="fname" name="firstname" placeholder="Your Email Address.." required><span id="st">*</span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-25">
+    <label for="password">Password</label>
+  </div>
+  <div class="col-75">
+    <input type="password" id="password" name="Password" placeholder="Your Password(Number's only)" required><span id="st">*</span>
+  </div>
+</div>
+<div class="row">
+  <input type="submit" value="Submit" onclick="print()">
+</div>
+</form>
+</div>
+<footer class="panel-footer">
+  <div class="container">
+    <div class="rows">
+      <section id="social"class=" col-sm-4">
+        <span>Follow us:</span><br>
+        Facebook:<a href="https://www.facebook.com/walunj.classes.96"><span>walunjclasses</span></a><br>
+        Gmail: <a href=mailto: shahajiwalunj054@gmail.com?><span>shahajiwalunj054@gmail.com</span></a>
+        <hr class="visible-xs">
+      </section>
+      <section id="address"class="col-sm-4">
+        <span>Address:</span><br>
+       <p>Walunj classes<br>
+        Behind Oreintal Bank Of Commerce<br>
+        Bhigwan Road,Baramati</p>
+        <hr class="visible-xs">
+      </section>
+      <section id="testimonials"class="col-sm-4" class="hidden-xs">
+        <p>Contact Us:</p>
+        <a href="+91 9764869749">
+            <span><br>+91 9764869749</span></a>
+        <hr class="visible-xs">
+      </section>
+    </div>
+  </div>
+</footer>
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
